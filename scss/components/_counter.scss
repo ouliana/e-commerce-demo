@@ -1,0 +1,16 @@
+.counter {
+    display:inline;
+    z-index: inherit;
+    line-height: 33px;
+    & span {
+        margin: 0 0.8rem;
+        font-weight: 600;
+    }
+    & i {
+        cursor: pointer;
+        color: $secondary_color;
+        vertical-align: middle;
+        font-size: 0.9rem;
+    }
+
+}

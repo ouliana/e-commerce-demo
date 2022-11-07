@@ -1,0 +1,25 @@
+.cart-content-item-image {
+    position: absolute;
+    width: 52px;
+    height: 62px;
+    overflow: hidden;
+    left: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cart-content-item-price {
+    color: $secondary_color;
+    // font-size: 2rem;
+}
+
+.cart-content-item {
+    padding-right: 2rem;
+}
+
+.delete-item {
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 1rem;
+
+}

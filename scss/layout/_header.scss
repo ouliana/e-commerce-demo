@@ -1,0 +1,18 @@
+nav {
+    padding: 0 1rem;
+    background-color: $primary-color;
+    ul {
+        a {
+            color: $success-color;
+            &:hover{
+                color: #64ffda;
+            }
+        }
+     }
+    
+}
+
+a.brand-logo {
+    color: $success-color;
+}
+

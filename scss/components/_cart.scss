@@ -1,0 +1,73 @@
+.collection.with-header .collection-item.avatar {
+    padding-left: 82px;
+}
+
+.cart-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 50rem;
+    max-width: 95%;
+    max-height: 80%;
+    z-index: 5;
+    animation: show 500ms ease-in-out;
+}
+
+.cart-header {
+    height:5rem;
+    line-height:3rem;
+    background-color: $primary_color;
+    color: $success-color;    
+    margin: 0;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 1rem;
+}
+ .header-item{
+     display:block;
+     float:left;
+}
+
+.cart-content {
+    overflow-y: scroll;
+    max-height: 400px;
+ }
+
+.title-icon {
+    font-size:3rem;
+    margin-right:1rem;
+   
+}
+
+.subtotal{
+    font-size:2rem;
+     margin-right:0.5rem;
+}
+
+.close-button {
+    cursor: pointer; 
+    margin-left:2rem;
+}
+
+.checkOut {
+    height: 3rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+@keyframes show {
+    from {
+        top: 70%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+
+
+
