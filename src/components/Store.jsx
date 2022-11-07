@@ -45,7 +45,7 @@ function Store() {
                 }
             });
             setOrder(newOrder);
-        } else {
+           } else {
            addToCart(itemId);
        }
     }
