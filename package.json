@@ -2,7 +2,7 @@
   "name": "e-commerce-demo",
   "version": "0.1.0",
   "private": true,
-  "home": "https://ouliana.github.io/e-commerce-demo",
+  "homepage": "https://ouliana.github.io/e-commerce-demo/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
