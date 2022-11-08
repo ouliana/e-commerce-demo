@@ -91,12 +91,14 @@ a.brand-logo {
   float: left;
 }
 
+.collection {
+  left: 0;
+}
+
 .cart-content {
   overflow-y: scroll;
   max-height: 400px;
   margin: auto;
-  position: relative;
-  left: 0;
 }
 
 .title-icon {
