@@ -62,10 +62,6 @@ a.brand-logo {
     bottom: unset;
   }
 }
-.collection.with-header .collection-item.avatar {
-  padding-left: 82px;
-}
-
 .cart-container {
   position: fixed;
   top: 50%;
@@ -98,6 +94,7 @@ a.brand-logo {
 .cart-content {
   overflow-y: scroll;
   max-height: 400px;
+  margin: auto;
 }
 
 .title-icon {

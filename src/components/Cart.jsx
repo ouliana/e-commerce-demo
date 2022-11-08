@@ -34,7 +34,7 @@ function Cart(props) {
 
     
 
-    return<div className="cart-container z-depth-3">
+    return <div className="cart-container z-depth-3">
     <div className="cart-header">
             <span className="header-item"><i className="material-icons title-icon">shopping_cart</i></span>
             {
@@ -50,7 +50,7 @@ function Cart(props) {
             
     </div>
     <div className="cart-content">
-        <ul className="collection  ">
+        <ul className="collection">
             {
                 order.length ? order.map(item => (
                     <ItemInCart
