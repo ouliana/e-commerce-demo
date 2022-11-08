@@ -10,12 +10,19 @@ function Store() {
     const [order, setOrder] = useState([]);
     const [loading, setLoading] = useState(true);
     const [isCartShow, setIsCartShow] = useState(false);
+    const [inCart, setInCart] = useState(0);
 
     const updateItem = (id, newQuantity) => {
         const itemIndex = items.findIndex(item => item.mainId === id);
         return items.map((item, index) => (
             (index === itemIndex) ? {...item, quantity: newQuantity} : item
         ))
+    }
+
+    const updateNumberInCart = () => {
+        setInCart(order.reduce((sum, item) => {
+            return sum += item.quantity
+        }, 0)) 
     }
 
     const addToCart = (itemId) => {
@@ -89,9 +96,14 @@ function Store() {
         })
     }, []);
 
+    useEffect(() => {
+        updateNumberInCart();
+        // eslint-disable-next-line
+    }, [order])
+
     return (
         <main className="container content">
-            <CartWindowToggler itemsInCart={order.length} handleCartShow={handleCartShow} />
+            <CartWindowToggler itemsInCart={inCart} handleCartShow={handleCartShow} />
             {loading ? (
                 <Preloader />
             ) : (

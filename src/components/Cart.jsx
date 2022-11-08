@@ -16,7 +16,7 @@ function Cart(props) {
         }, 0)
     }
 
-    const updateNumber = () => {
+    const inCart = () => {
         return order.reduce((sum, item) => {
             return sum += item.quantity
         }, 0)
@@ -28,7 +28,7 @@ function Cart(props) {
 
     useEffect(() => {
         setSubtotal(updateSubtotal());
-        setnumberOfItems(updateNumber());
+        setnumberOfItems(inCart());
         // eslint-disable-next-line
     }, [order]);
 
