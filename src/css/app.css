@@ -91,7 +91,7 @@ a.brand-logo {
   float: left;
 }
 
-.collection {
+.collection .collection-item.avatar {
   left: 0;
 }
 
