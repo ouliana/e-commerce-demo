@@ -25,14 +25,12 @@
      display:block;
      float:left;
 }
-.collection .collection-item.avatar {
-    left: 0;
-}
 
 .cart-content {
     overflow-y: scroll;
     max-height: 400px;
     margin: auto;
+    width: 100%;
  }
 
 .title-icon {
